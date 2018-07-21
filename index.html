@@ -1,3 +1,55 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Title here</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div class="mainArea">
+            <div class="appGreeting">
+                <h1 style="font-size: 50px">Welcome!</h1>
+            </div><!--appGreeting-->
+            <div id="textCard">
+                <div class="textArea">
+                    <div id="reqData">
+                        <span class="input">
+                            I want to ship
+                            <span class="inputNote" id="shipmentType" onclick="showShipments()">
+                                <div class="inputNoteText">placeholder</div>
+                            </span>
+                        </span>
+                        <br>
+                        <br>
+                        <span class="input" style="position: relative; left: 10%;" onclick="showLocations()">
+                            from
+                            <span class="inputNote" id="origin">
+                                <div class="inputNoteText">origin</div>
+                            </span>
+                        </span>
+
+                        <span class="input" style="position: relative; left: 15%;" onclick="showLocations()">
+                            to
+                            <span class="inputNote" id="origin">
+                                <div class="inputNoteText">destination</div>
+                            </span>
+                        </span>
+
+                        <br>
+                        <br>
+
+                        <span class="input" style="position: relative; left: 20%;" onclick="showCars()">
+                                on a
+                                <span class="inputNote" id="origin">
+                                    <div class="inputNoteText">car type</div>
+                                </span>
+                            </span>
+                    </div> <!--reqData-->
+                </div> <!--textArea-->
+            </div><!--textCard-->
+        </div><!--mainArea-->
+        <div class="disableScreen"></div>
+    </body>
 </html>

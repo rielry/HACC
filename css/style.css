@@ -1,2 +1,69 @@
 html, body{
+    background-color: #f9f6d0;
+    font-family: 'Quicksand', sans-serif;
 } 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #3f3e35;
+}
+
+.disableScreen {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainArea {
+    position: relative;
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+
+#textCard {
+    position: relative;
+    background-color:rgba(112,205,187,0.5);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.textArea {
+    position: relative;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+}
+
+.inputNote {
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    
+}
+
+.inputNoteText {
+    text-align: center;
+    color: #2f7c84;
+    cursor: default;
+}
+
+.inputNote:hover {
+    transform: scale(1.1);
+    transition: all .2 ease-in-out;
+}
+
+.input {
+    display: inline;
+    font-size: 25px;
+}
