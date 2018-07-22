@@ -5,6 +5,10 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
         <script src="./js/main.js"></script>
     </head>
     <body>
@@ -18,7 +22,9 @@
                         <span class="input">
                             I want to ship
                             <span class="inputNote" id="shipmentType" onclick="showShipments()">
-                                <div class="inputNoteText">placeholder</div>
+                                <input class="customInput" type="text" list="shipmentOptions">
+                                <datalist id="shipmentOptions"></datalist>
+                                <!-- <div class="inputNoteText">placeholder</div> -->
                             </span>
                         </span>
                         <br>
@@ -26,14 +32,16 @@
                         <span class="input" style="position: relative; left: 10%;" onclick="showLocations()">
                             from
                             <span class="inputNote" id="origin">
-                                <div class="inputNoteText">origin</div>
+                                <input class="customInput" type="text" list="locationOptions">
+                                <datalist id="locationOptions"></datalist>
                             </span>
                         </span>
 
                         <span class="input" style="position: relative; left: 15%;" onclick="showLocations()">
                             to
                             <span class="inputNote" id="origin">
-                                <div class="inputNoteText">destination</div>
+                                <input class="customInput" type="text" list="locationOptions">
+                                <datalist id="locationOptions"></datalist>
                             </span>
                         </span>
 
@@ -43,13 +51,13 @@
                         <span class="input" style="position: relative; left: 20%;" onclick="showCars()">
                                 on a
                                 <span class="inputNote" id="origin">
-                                    <div class="inputNoteText">car type</div>
+                                    <input class="customInput" type="text" list="locationOptions">
+                                    <datalist id="locationOptions"></datalist>
                                 </span>
                             </span>
                     </div> <!--reqData-->
                 </div> <!--textArea-->
             </div><!--textCard-->
         </div><!--mainArea-->
-        <div class="disableScreen"></div>
     </body>
 </html>

@@ -1,20 +1,15 @@
-var screenDisabled = false;
+var screenDisabled;
+var disable;
+var shipment;
+var locations;
+var carType;
 
-function showShipments() {
-    alert('shipments bruh');
-}
+var shipmentOptions = ['TEST1', 'TEST2', 'TEST3', 'TEST4', 'TEST5'];
 
-function showLocations() {
-    alert('locations bruh');
-}
-
-function showCars() {
-    alert('cars bruh');
-}
-
-function toggleDisable() {
-    var disable = document.getElementById('disableScreen');
-    if(screenDisabled) {
-        disable.
-    }
-}
+$(document).ready(function() {
+    shipmentOptions.forEach(function(shipment) {
+        var el = document.createElement("option");
+        el.value = shipment;
+        $('#shipmentOptions').append(el);
+    })
+});
