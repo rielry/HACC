@@ -5,10 +5,9 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/handsontable-pro/dist/handsontable.full.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handsontable-pro/dist/handsontable.full.min.js"></script>
         <script src="./js/main.js"></script>
     </head>
     <body>
@@ -19,27 +18,27 @@
             <div id="textCard">
                 <div class="textArea">
                     <div id="reqData">
-                        <span class="input">
+                        <span class="input" id="shipmentWrapper">
                             I want to ship
-                            <span class="inputNote" id="shipmentType">
-                                <input class="customInput" type="text" list="shipmentOptions">
+                            <span class="inputNote" >
+                                <input class="customInput" id="shipmentType" type="text" list="shipmentOptions">
                                 <datalist id="shipmentOptions"></datalist>
                             </span>
                         </span>
                         <br>
                         <br>
-                        <span class="input" style="position: relative; left: 10%;">
+                        <span class="input" style="position: relative; left: 10%;" id="originWrapper">
                             from
-                            <span class="inputNote" id="origin">
-                                <input class="customInput" type="text" list="locationOptions">
+                            <span class="inputNote">
+                                <input class="customInput" id="origin" type="text" list="locationOptions">
                                 <datalist id="locationOptions"></datalist>
                             </span>
                         </span>
 
-                        <span class="input" style="position: relative; left: 15%;">
+                        <span class="input" style="position: relative; left: 15%;" id="destinationWrapper">
                             to
-                            <span class="inputNote" id="origin">
-                                <input type="text" list="locationOptions">
+                            <span class="inputNote">
+                                <input class="customInput" id="destination" type="text" list="locationOptions">
                                 <datalist id="locationOptions"></datalist>
                             </span>
                         </span>
@@ -47,14 +46,24 @@
                         <br>
                         <br>
 
-                        <span class="input" style="position: relative; left: 20%;">
+                        <span class="input" style="position: relative; left: 20%;" id="carWrapper">
                                 on a
-                                <span class="inputNote" id="origin">
-                                    <input class="customInput" type="text" list="carOptions">
+                                <span class="inputNote" >
+                                    <input class="customInput" id="carOption" type="text" list="carOptions">
                                     <datalist id="carOptions"></datalist>
                                 </span>
                             </span>
                     </div> <!--reqData-->
+
+                    <div id="sortingButtons">
+                        <p style="font-size: 25px">sort by...</p>
+                        <span class="radioInput"><input type="radio" name="sort" value="Price"/>Price (Low - High)</span>
+                        <span class="radioInput"><input type="radio" name="sort" value="Consistency"/>Consitency</span>
+                        <span class="radioInput"><input type="radio" name="sort" value="SCAC"/>Railroad Code</span>
+                        <span class="radioInput"><input type="radio" name="sort" value="Time"/>Transit Time</span>
+                    </div><!--sortingButtons-->
+
+                    <div id="dataTable"></div>
                 </div> <!--textArea-->
             </div><!--textCard-->
         </div><!--mainArea-->
