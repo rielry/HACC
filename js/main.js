@@ -21,6 +21,7 @@ var dummyData = [
 
 $(document).ready(function() {
     $('#sortingButtons').hide();
+    $('#conversion').hide();
 
     shipment = $('#shipmentType');
     origin = $('#origin');
@@ -121,10 +122,13 @@ function switchTab(tabIndex) {
     if(tabIndex != currTab) {
         if(tabIndex == 0) {
             $('#textCard').css('background-color', '#b4e1c5');
+            $('#conversion').hide();
             $('#mainTab').show();
+
         } else if(tabIndex == 1) {
             $('#textCard').css('background-color', '#e6aaaa');
             $('#mainTab').hide();
+            $('#conversion').show();
         }
     }
     currTab = tabIndex;

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title here</title>
+        <title>Freight Master 3000</title>
+        <link rel="icon" href="box.png">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -9,11 +10,12 @@
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handsontable-pro/dist/handsontable.full.min.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/currency.js"></script>
     </head>
     <body>
         <div class="mainArea">
             <div class="appGreeting">
-                <h1 style="font-size: 50px; cursor: default">Welcome!</h1>
+                <h1 style="font-size: 50px; cursor: default">Welcome to Freight Master 3000!</h1>
             </div><!--appGreeting-->
             <div class="tab" style="background-color: #b4e1c5;" onclick="switchTab(0)"></div>
             <div class="tab" style="background-color: #e6aaaa;" onclick="switchTab(1)"></div>
@@ -68,7 +70,28 @@
                 </div> <!--mainTab-->
 
                 <div id="conversion">
-
+                        <input type="text" id="GBP" size="10" value="0" onchange="gbpfunc()"/>
+                        <label for="GBP"> GBP </label>
+                    
+                        </br>
+                    
+                        <input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
+                        <label for="USD"> USD </label>
+                    
+                        </br>
+                    
+                        <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
+                        <label for="EUR"> EUR </label>
+                    
+                        </br>
+                    
+                        <input type="text" id="CAD" size="10" value="0" onchange="cadfunc()" />
+                        <label for="CAD"> CAD </label>
+                    
+                        </br>
+                    
+                        <input type="text" id="AUD" size="10" value="0" onchange="audfunc()" />
+                        <label for="AUD"> AUD </label>  
                 </div> <!--conversion-->
 
             </div><!--textCard-->
