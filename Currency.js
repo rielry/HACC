@@ -1,4 +1,3 @@
-var gbp, usd, eur, cad, aud;
 function init()
 {
     gbp = document.getElementById("GBP");
