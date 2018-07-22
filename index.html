@@ -15,8 +15,10 @@
             <div class="appGreeting">
                 <h1 style="font-size: 50px; cursor: default">Welcome!</h1>
             </div><!--appGreeting-->
+            <div class="tab" style="background-color: #b4e1c5;" onclick="switchTab(0)"></div>
+            <div class="tab" style="background-color: #e6aaaa;" onclick="switchTab(1)"></div>
             <div id="textCard">
-                <div class="textArea">
+                <div id="mainTab">
                     <div id="reqData">
                         <span class="input" id="shipmentWrapper">
                             I want to ship
@@ -62,66 +64,9 @@
                         <span class="radioInput"><input type="radio" name="sort" value="SCAC"/>Railroad Code</span>
                         <span class="radioInput"><input type="radio" name="sort" value="Time"/>Transit Time</span>
                     </div><!--sortingButtons-->
-
                     <div id="dataTable"></div>
-                </div> <!--textArea-->
+                </div> <!--mainTab-->
             </div><!--textCard-->
         </div><!--mainArea-->
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.fa {
-  padding: 30px;
-  font-size: 15px;
-  width: 30px;
-  text-align center;
-  text-decoration: none;
-  margin: 20px 20px;
-  border-radius: 30%;
-}
-
-.fa:hover {
-    opacity: 0.9;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-}
-</style>
-<body>
-<h2 style"text-align:right;">UP Social Media!</h2>
-
-<a href="https://www.facebook.com/unionpacific/" class="fa fa-facebook"></a>
-<a href="https://twitter.com/UnionPacific?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
-<a href="https://www.linkedin.com/company/unionpacific/" class="fa fa-linkedin"></a>
-<a href="https://www.youtube.com/user/UnionPacificRailroad" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/uprr/?hl=en" class="fa fa-instagram"></a>
-
-        
-               
     </body>
 </html>

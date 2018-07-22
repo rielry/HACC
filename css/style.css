@@ -40,13 +40,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #textCard {
     position: relative;
-    background-color:rgba(112,205,187,0.5);
+    background-color: #b4e1c5;
     height: 100%;
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.6);
 }
 
-.textArea {
+#mainTab {
     position: relative;
     margin: auto;
     height: 90%;
@@ -101,6 +101,18 @@ select{
     margin: auto;
     cursor: default;
     color: #fefefe;
+}
+
+.tab {
+    width: 120px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -4px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.6);
+
 }
 
 .customButton {

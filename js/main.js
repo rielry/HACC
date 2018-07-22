@@ -4,6 +4,8 @@ var destination;
 var carOption;
 var smallText = false;
 var table;
+var currTab = 0;
+var tabs = ['#main', '#conversion'];
 
 var shipmentOptions = ['TEST1', 'TEST2', 'TEST3', 'TEST4', 'TEST5'];
 var locationOptions = ['LOCATION1', 'LOCATION2', 'LOCATION3'];
@@ -103,16 +105,27 @@ function loadOptions() {
         $('#carWrapper').animate({'left': 475}, 500);
 
         setTimeout(function(){
-            $('#sortingButtons').fadeIn()
             var container = document.getElementById('dataTable');
             table = new Handsontable(container, {
                 data: dummyData,
                 rowHeaders: false,
                 colHeaders: ['Commodity', 'Origin', 'Destination', 'Car Type', 'Rate Amount', 'SCAC', 'Transit Time', 'Consistency'],
-                filters: true
             })
+
+            $('#sortingButtons').fadeIn();
         }, 1000);
-
-
     }
+}
+
+function switchTab(tabIndex) {
+    if(tabIndex != currTab) {
+        if(tabIndex == 0) {
+            $('#textCard').css('background-color', '#b4e1c5');
+            $('#mainTab').show();
+        } else if(tabIndex == 1) {
+            $('#textCard').css('background-color', '#e6aaaa');
+            $('#mainTab').hide();
+        }
+    }
+    currTab = tabIndex;
 }
