@@ -21,15 +21,14 @@
                     <div id="reqData">
                         <span class="input">
                             I want to ship
-                            <span class="inputNote" id="shipmentType" onclick="showShipments()">
+                            <span class="inputNote" id="shipmentType">
                                 <input class="customInput" type="text" list="shipmentOptions">
                                 <datalist id="shipmentOptions"></datalist>
-                                <!-- <div class="inputNoteText">placeholder</div> -->
                             </span>
                         </span>
                         <br>
                         <br>
-                        <span class="input" style="position: relative; left: 10%;" onclick="showLocations()">
+                        <span class="input" style="position: relative; left: 10%;">
                             from
                             <span class="inputNote" id="origin">
                                 <input class="customInput" type="text" list="locationOptions">
@@ -37,10 +36,10 @@
                             </span>
                         </span>
 
-                        <span class="input" style="position: relative; left: 15%;" onclick="showLocations()">
+                        <span class="input" style="position: relative; left: 15%;">
                             to
                             <span class="inputNote" id="origin">
-                                <input class="customInput" type="text" list="locationOptions">
+                                <input type="text" list="locationOptions">
                                 <datalist id="locationOptions"></datalist>
                             </span>
                         </span>
@@ -48,11 +47,11 @@
                         <br>
                         <br>
 
-                        <span class="input" style="position: relative; left: 20%;" onclick="showCars()">
+                        <span class="input" style="position: relative; left: 20%;">
                                 on a
                                 <span class="inputNote" id="origin">
-                                    <input class="customInput" type="text" list="locationOptions">
-                                    <datalist id="locationOptions"></datalist>
+                                    <input class="customInput" type="text" list="carOptions">
+                                    <datalist id="carOptions"></datalist>
                                 </span>
                             </span>
                     </div> <!--reqData-->

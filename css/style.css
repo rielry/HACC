@@ -75,8 +75,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
 }
 
-option{
+select{
     background-color: red;
+}
+
+#submit {
+    position: relative;
+    top: 90%;
+    margin: auto;
 }
 
 .modalButtons {
