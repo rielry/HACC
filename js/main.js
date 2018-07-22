@@ -14,7 +14,7 @@ $(document).ready(function() {
         el.value = shipment;
         $('#shipmentOptions').append(el);
     })
-
+    
     locationOptions.forEach(function(location) {
         var el = document.createElement("option");
         el.value = location;
@@ -26,4 +26,4 @@ $(document).ready(function() {
         el.value = car;
         $('#carOptions').append(el);
     })
-});
+});s
